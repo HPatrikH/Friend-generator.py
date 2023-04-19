@@ -1,5 +1,5 @@
-#Mleko read file
 
-file = open("C:\\Users\Patrik\Desktop\Python\Pliki testowe\Mleko.txt", "r")
+
+file = open("Here is the path to the file", "r")
 
 print(file.read())
