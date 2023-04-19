@@ -1,6 +1,6 @@
 import webbrowser
 
-#Define what sute you want to open
+#Define which page you want to open
 
 url = "https://www.google.pl/"
 
