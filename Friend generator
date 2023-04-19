@@ -1,0 +1,10 @@
+name = input("Wprowadź nick: ")
+
+if name == "BigRed":
+    print("The best friend ever")
+elif name == "Virtet":
+    print("The best jungler ever")
+elif name == "Daxamix":
+    print("Monty Mole")
+else:
+    print("Zła wartość")
