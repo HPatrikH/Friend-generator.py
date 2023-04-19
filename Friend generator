@@ -1,10 +1,14 @@
+#User input command
+
 name = input("Wprowadź nick: ")
 
-if name == "BigRed":
-    print("The best friend ever")
-elif name == "Virtet":
-    print("The best jungler ever")
-elif name == "Daxamix":
-    print("Monty Mole")
+#Commands which, when entered by name, print out the exact message
+
+if name == "Jacek":
+    print("First best friend")
+elif name == "Damian":
+    print("Second best friend")
+elif name == "Norbert":
+    print("Third best friend")
 else:
-    print("Zła wartość")
+    print("Incorrect input")
