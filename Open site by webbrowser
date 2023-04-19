@@ -1,5 +1,9 @@
 import webbrowser
 
+#Define what sute you want to open
+
 url = "https://www.google.pl/"
+
+#Make Python open a page for you
 
 webbrowser.open(url)
