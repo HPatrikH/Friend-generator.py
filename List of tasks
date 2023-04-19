@@ -9,19 +9,19 @@ def show_tasks():
         task_index += 1
 
 def add_task():
-    task = input("Wpisz treść zadania: ")
+    task = input("Enter the content of the task: ")
     tasks.append(task)
-    print("Dodano zadanie!")
+    print("Task added!")
 
 def delete_task():
-    task_index = int(input("Podaj indeks zadania do usunięcia: "))
+    task_index = int(input("Specify the index of the task to be deleted: "))
 
     if task_index < 0 or task_index > len(tasks) - 1:
-        print("Zadanie o tym indeksie nie istniej")
+        print("A task with this index does not exist")
         return
 
     tasks.pop(task_index)
-    print("Usunięto zadanie!")
+    print("Task removed!")
 
 def save_tasks_to_file():
     file = open("tasks.txt", "w")
