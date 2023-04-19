@@ -27,7 +27,6 @@ def toggle_event(key):
         global clicking
         clicking = not clicking
 
-
 click_thread = threading.Thread(target=clicker)
 click_thread.start()
 
