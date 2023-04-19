@@ -56,11 +56,11 @@ while user_choice != 5:
         save_tasks_to_file()
     
     if user_choice >= 6:
-        print("Go back to the list!")
+        print("Incorrect data, please return to the list")
         print()
 
     if user_choice <= 0:
-        print("Go back to the list!")
+        print("Incorrect data, please return to the list")
         print()
 
     print("1. Show tasks")
@@ -70,8 +70,8 @@ while user_choice != 5:
     print("5. Exit")
 
     try:
-        user_choice = int(input("Wybierz liczbę: "))
+        user_choice = int(input("Choose number: "))
         print()
     except ValueError:
-        print("Go back to the list!")
+        print("Incorrect data, please return to the list")
         print()
