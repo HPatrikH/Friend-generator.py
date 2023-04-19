@@ -56,22 +56,22 @@ while user_choice != 5:
         save_tasks_to_file()
     
     if user_choice >= 6:
-        print("Prędko wracaj do listy!")
+        print("Go back to the list!")
         print()
 
     if user_choice <= 0:
-        print("Prędko wracaj do listy!")
+        print("Go back to the list!")
         print()
 
-    print("1. Pokaż zadania")
-    print("2. Dodaj zadanie")
-    print("3. Usuń zadanie")
-    print("4. Zapisz zmiany do pliku")
-    print("5. Wyjdź")
+    print("1. Show tasks")
+    print("2. Add task")
+    print("3. Delete task")
+    print("4. Save changes in file")
+    print("5. Exit")
 
     try:
         user_choice = int(input("Wybierz liczbę: "))
         print()
     except ValueError:
-        print("Prędko wracaj do listy!")
+        print("Go back to the list!")
         print()
