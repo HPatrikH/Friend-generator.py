@@ -1,0 +1,7 @@
+import subprocess as sp
+
+programname = "Notepad.exe"
+
+file = "Here is the path to the file"
+
+sp.Popen([programname,file])
