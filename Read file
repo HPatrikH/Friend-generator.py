@@ -1,0 +1,5 @@
+#Mleko read file
+
+file = open("C:\\Users\Patrik\Desktop\Python\Pliki testowe\Mleko.txt", "r")
+
+print(file.read())
