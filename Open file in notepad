@@ -1,7 +1,13 @@
 import subprocess as sp
 
+#Define the program you want to open
+
 programname = "Notepad.exe"
 
+#Define the file you want to open
+
 file = "Here is the path to the file"
+
+#Open exact file in exact program
 
 sp.Popen([programname,file])
