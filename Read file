@@ -1,5 +1,7 @@
-
+#Define the file you want to open
 
 file = open("Here is the path to the file", "r")
+
+#Make Python show the contents of the file in the terminal
 
 print(file.read())
