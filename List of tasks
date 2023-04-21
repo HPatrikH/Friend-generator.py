@@ -2,6 +2,7 @@ user_choice = -1
 
 tasks = []
 
+#Define each task, what it should do
 def show_tasks():
     task_index = 0
     for task in tasks:
@@ -42,6 +43,7 @@ def load_tasks_from_file():
 
 load_tasks_from_file()
 
+#Assign to the number accordingly and make that when you enter the wrong number, the program informs you and tells you to go back to the list
 while user_choice != 5:
     if user_choice == 1:
         show_tasks()
