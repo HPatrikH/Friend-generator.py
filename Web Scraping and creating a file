@@ -2,35 +2,27 @@ from bs4 import BeautifulSoup
 import requests
 
 #Define the website you want to use
-
 website = 'https://subslikescript.com/movie/Titanic-120338'
 
 #Requesting html code from a website
-
 result = requests.get(website)
 
 #Make Python give it to you as text
-
 content = result.text
 
 #Make it easy to read then print
-
 soup = BeautifulSoup(content, 'lxml')
 # print(soup.prettify())
 
 #Specify which (first of many) part of the website you want to find
-
 box = soup.find('article', class_='main-article')
 
 #Defining a page title
-
 title = soup.find('h1').get_text()
 
 #Defining the Titanic scenario
-
 transcript = soup.find('div', class_='full-script').get_text(strip=True, separator=' ')
 
 #Make Python create and save a file with a filename like the title of the website and a Titanic script inside the file
-
 with open(f'{title}.txt', 'w', encoding='utf-8') as file:
     file.write(transcript)
