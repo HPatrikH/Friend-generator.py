@@ -1,7 +1,6 @@
 import subprocess
 
 #Make Python close the notepad application system-wide
-
 while True:
     subprocess.call("TASKKILL /F /IM notepad.exe", shell=True)
     quit()
