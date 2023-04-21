@@ -1,9 +1,7 @@
 #User input command
-
 name = input("Wprowadź nick: ")
 
 #Commands which, when entered by name, print out the exact message
-
 if name == "Jacek":
     print("First best friend")
 elif name == "Damian":
