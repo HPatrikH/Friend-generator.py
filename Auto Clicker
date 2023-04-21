@@ -4,16 +4,13 @@ from pynput.mouse import Controller, Button
 from pynput.keyboard import Listener, KeyCode
 
 #Define the toggle button
-
 TOGGLE_KEY = KeyCode(char="x")
 
 #Define which device the program is to control
-
 clicking = False
 mouse = Controller()
 
 #Define which button on the mouse you want the program to use and what breaks it should take between use
-
 def clicker():
     while True:
         if clicking:
@@ -21,7 +18,6 @@ def clicker():
         time.sleep(0.001)
 
 #Define that the toggle button starts and stops the program
-
 def toggle_event(key):
     if key == TOGGLE_KEY:
         global clicking
